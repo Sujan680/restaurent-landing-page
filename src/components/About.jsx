@@ -5,15 +5,16 @@ import { ABOUT } from "../constants";
 const About = () => {
   return (
     <section className="container mx-auto mb-8" id="about">
-      <h2 className="mb-8 text-center text-3xl tracking-tighter lg:text-4xl">
+      <h2 className="mb-3 text-center text-3xl tracking-tighter lg:text-4xl">
         About Us
       </h2>
-      <div className="flex flex-wrap ">
+      <div className="mb-8 mx-auto h-2 w-36  bg-rose-300 lg:-rotate-3"></div>
+      <div className="flex  flex-wrap ">
         <div className="w-full p-4 lg:w-1/2">
           <img
             src={aboutImg}
             alt="about Image"
-            className="rounded-3xl w-full lg:-rotate-3 lg:w-1/2"
+            className="rounded-3xl w-full lg:-rotate-3 lg:h-[500px]"
           />
         </div>
         <div className="w-full px-2 lg:w-1/2">
