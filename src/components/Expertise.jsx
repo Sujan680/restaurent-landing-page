@@ -1,5 +1,27 @@
 import React from "react";
 import { CUSINES } from "../constants";
+import { motion } from "framer-motion";
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 1,
+    },
+  },
+};
+
+const ItemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+    },
+  },
+};
 
 const Expertise = () => {
   return (
@@ -8,9 +30,15 @@ const Expertise = () => {
         Our Expertise
       </h2>
       <div className="mb-10 mx-auto h-2 w-[180px]  bg-rose-300 lg:-rotate-3"></div>
-      <div className="container mx-auto px-6">
+      <motion.div
+        initial="hidden"
+        whileInView="show"
+        variants={containerVariants}
+        className="container mx-auto px-6"
+      >
         {CUSINES.map((cusine, index) => (
-          <div
+          <motion.div
+            variants={ItemVariants}
             key={index}
             className="flex items-center border-b-4 border-dotted border-neutral-700/40 py-3"
           >
@@ -30,9 +58,9 @@ const Expertise = () => {
                 {cusine.description}
               </p>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };
