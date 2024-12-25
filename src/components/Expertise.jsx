@@ -29,7 +29,7 @@ const Expertise = () => {
       <h2 className="my-4 text-center text-3xl tracking-tighter lg:text-4xl">
         Our Expertise
       </h2>
-      <div className="mb-10 mx-auto h-2 w-[180px]  bg-rose-300 lg:-rotate-3"></div>
+      <div className="mb-10 mx-auto h-1 md:h-2 w-[180px]  bg-rose-300 lg:-rotate-3"></div>
       <motion.div
         initial="hidden"
         whileInView="show"

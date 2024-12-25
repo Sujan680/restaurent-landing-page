@@ -9,7 +9,7 @@ const About = () => {
       <h2 className="mb-3 text-center text-3xl tracking-tighter lg:text-4xl">
         About Us
       </h2>
-      <div className="mb-10 mx-auto h-2 w-36  bg-rose-300 lg:-rotate-3"></div>
+      <div className="mb-10 mx-auto h-1 md:h-2 w-36  bg-rose-300 lg:-rotate-3"></div>
       <div className="flex  flex-wrap px-6 ">
         <div className="w-full p-4 lg:w-1/2">
           <img
@@ -33,7 +33,7 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="mb-8 mt-1 h-2 w-36 bg-rose-300 lg:-rotate-3"
+            className="mb-8 mt-1 h-1 md:h-2 w-36 bg-rose-300 lg:-rotate-3"
           ></motion.div>
           <motion.p
             initial={{ opacity: 0, y: 50 }}

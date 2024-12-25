@@ -5,7 +5,7 @@ const ContactSection = () => {
   return (
     <section className="container mx-auto py-16" id="contact">
       <h2 className="mb-2 text-center text-3xl lg:text-4xl">Contact Us</h2>
-      <div className="mb-8 mx-auto h-2 w-[160px]  bg-rose-300 lg:-rotate-3"></div>
+      <div className="mb-8 mx-auto h-1 md:h-2 w-[160px]  bg-rose-300 lg:-rotate-3"></div>
       <div className="text-neutral-400">
         {CONTACT.map((detail) => (
           <p
